@@ -1,1 +1,8 @@
-zo
+Vulnerability Title: SQL injection exists in MRBS
+
+Affected version: 1.5.0 
+
+Discovered by: Zo
+
+Analyst Report: MRBS version 1.5.0 has a SQL injection vulnerability in edit_entry_handler.php files, specifically in the rooms%5B%5D parameter
+poc: +if(left(database(),1)='m',sleep(5),1)
